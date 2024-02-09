@@ -1,0 +1,2 @@
+# Breast-Cancer-Prediction-by-Ensembling-Machine-Learning-Algorithms-and-Explainable-AI-
+A primary cause of death is cancer, which is a  result of abnormal cell growth. Trained on a dataset with diverse features from fine needle  aspiration of breast masses, the model not only determines  whether a patient is positive or negative but also sheds light  on the importance of specific features of the cancerous cell. 
