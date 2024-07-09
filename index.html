@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Breast Cancer Prediction</title>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f1ee54; background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+    <!-- First Section -->
+    <div style="color: #333; text-align: center; padding: 20px;" class="container">
+        <h2 class='container-heading'><span class="heading_font">Breast Cancer Prediction</span></h2>
+    </div>
+
+    <!-- Second Section -->
+    <div style="color: #333; text-align: center; padding: 20px;" class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <br>
+            <br>
+            <div class="input-group">
+                <div class="input-box">
+                    <h3 style="color: #555;">Texture Mean</h3>
+                    <input id="first" name="texture_mean" placeholder="Texture Mean" required="required">
+                </div>
+                <div class="input-box">
+                    <h3 style="color: #555;">Smoothness Mean</h3>
+                    <input id="second" name="smoothness_mean" placeholder="Smoothness Mean" required="required">
+                </div>
+                <div class="input-box">
+                    <h3 style="color: #555;">Compactness Mean</h3>
+                    <input id="third" name="compactness_mean" placeholder="Compactness Mean" required="required">
+                </div>
+            </div>
+            
+            <!-- Third Section -->
+            <div class="input-group">
+                <div class="input-box">
+                    <h3 style="color: #555;">Symmetry Mean</h3>
+                    <input id="fourth" name="symmetry_mean" placeholder="Symmetry Mean" required="required">
+                </div>
+                <div class="input-box">
+                    <h3 style="color: #555;">Fractal Dimension Mean</h3>
+                    <input id="fifth" name="fractal_dimension_mean" placeholder="Fractal Dimension Mean" required="required">
+                </div>
+                <div class="input-box">
+                    <h3 style="color: #555;">Texture SE</h3>
+                    <input id="sixth" name="texture_se" placeholder="Texture SE" required="required">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-box">
+                    <h3 style="color: #555;">Smoothness SE</h3>
+                    <input id="seventh" name="smoothness_se" placeholder="Smoothness SE" required="required">
+                </div>
+                <div class="input-box">
+                    <h3 style="color: #555;">Symmetry SE</h3>
+                    <input id="eight" name="symmetry_se" placeholder="Symmetry SE" required="required">
+                </div>
+                <div class="input-box">
+                    <h3 style="color: #555;">Symmetry Worst</h3>
+                    <input id="ninth" name="symmetry_worst" placeholder="Symmetry Worst" required="required">
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <button id="sub" type="submit">Submit</button>
+            <br>
+            <br>
+            <br>
+            <br>
+        </form>
+    </div>
+   
+
+    <style>
+       
+        /* Remove background from body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Heading Font */
+        .container-heading {
+            margin-top: 0;
+       
+        }
+
+        .heading_font {
+            color: #f0267a; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 36px;
+            font-weight: normal;
+        }
+
+        /* Input Group */
+        .input-group {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* Input Box */
+        .input-box {
+            flex: 0 1 calc(33.33% - 20px);
+            margin: 10px;
+        }
+
+        input {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        /* Submit Button */
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            background-color: #360bf6; /* Blue, complementing the background */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        #sub:hover {
+            background-color: #00220a; /* Darker blue on hover */
+        }
+    </style>
+</body>
+
+</html>

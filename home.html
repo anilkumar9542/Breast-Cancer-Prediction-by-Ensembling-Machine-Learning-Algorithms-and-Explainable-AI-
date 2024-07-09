@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Prediction</title>
+    <style>
+        body {
+            background-color: #f1ee54;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            margin: 100px auto;
+            max-width: 800px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 36px;
+            color: #f0267a; 
+        }
+
+        .description {
+            margin-bottom: 40px;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        form {
+            margin-top: 25px;
+        }
+
+        input[type="submit"] {
+            background-color: #360bf6; 
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00220a; 
+        }
+    </style>
+</head>
+
+<body>
+    <br><br><br><br>
+    <div class="container">
+        <h1>Breast Cancer Prediction</h1>
+        <div class="description">
+            <p>Fine Needle Aspiration (FNA) is a technique that involves using a thin, 
+               hollow needle to extract a small sample of cells or fluid from the suspicious area and then it examined under microscope.
+               It aids in diagnosing whether the mass is benign or malignant.
+               Benign is a non-cancerous cell which is harmless.
+               Malignant is a cancerous cell which is harmful and grows abnormally.</p>
+        </div>
+        <form action="/submit" method="post">
+            <input type="submit" value="Click here to go">
+        </form>
+    </div>
+</body>
+
+</html>
